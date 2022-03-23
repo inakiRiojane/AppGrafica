@@ -17,7 +17,7 @@ public class Login extends JFrame {
 	 */
 	private static final long serialVersionUID = 7446704165038411251L;
 	private static Login frame;
-	private static int AnchoLabel = 100; // las statics se ponen en mayusculas
+	private static int AnchoLabel = 300; // las statics se ponen en mayusculas
 	private static int AltoLabel = 20;
 
 	public static void main(String[] args) {
@@ -103,9 +103,8 @@ public class Login extends JFrame {
 
 				} else if (nombre.getText().equalsIgnoreCase("Elorrieta")
 						&& !contraseña2.getText().equalsIgnoreCase("Elorrieta")) {
-					
-					error.setText("Contraseña incorrecto");
 
+					error.setText("Contraseña incorrecto");
 
 				} else if (!nombre.getText().equalsIgnoreCase("Elorrieta")
 						&& !contraseña2.getText().equalsIgnoreCase("Elorrieta")) {
@@ -135,7 +134,11 @@ public class Login extends JFrame {
 		lblPass.setBounds(60, 200, AnchoLabel, AltoLabel);
 		login.add(lblUsuario);
 		login.add(lblPass);
-
+		
+		System.out.println(" ");
+		System.out.println("cambio para gitHub");
+		System.out.println(" "); 
+		
 		JButton btnLogin = new JButton("login");
 		btnLogin.setBounds(150, 250, AnchoLabel, AltoLabel);
 		btnLogin.addActionListener(new ActionListener() {
